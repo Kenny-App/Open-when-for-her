@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #DC7D7D;
+  --secondary-color: #FBD7CE;
+  --Third-color: #D57375;
+  --background-color: #fff4ee;
+  --text-color: #8A302D;
+  --default-font-family: 'Patrick-Hand', Arial, sans-serif, Helvetica;
+}
+@font-face {
+  font-family: 'Patrick-Hand';
+  src: url('../assets/Font/PatrickHand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+    font-family: var(--default-font-family);
+    margin: 0;
+    padding: 0;
+}
+.bg {
+  background-color: var(--background-color);
+}
+.header {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.header-text h1 {
+  color: var(--text-color);
+  font-size: 3rem;
+  margin: 0;
+  span {
+    color: var(--primary-color);
+  }
+}
+.header-text p {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin-top: 10px;
+  font-weight: bold;
+  word-spacing: 2px;
+}
+
+.header-heart {
+  position: absolute;
+  color: var(--primary-color);
+  opacity: 0.20;
+  pointer-events: none;
+  font-size: 28px;
+}
+
+.heart-1 {
+  top: 20px;
+  left: 8%;
+  transform: rotate(-15deg);
+}
+
+.heart-2 {
+  top: 45px;
+  right: 12%;
+  transform: rotate(15deg);
+}
+
+.heart-3 {
+  bottom: 80px;
+  left: 11%;
+}
+/* 
+letter part 
+*/
+.letter-container {
+      display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.7rem 1.5rem;
+    width: 90%;
+    margin: 10px auto;
+    justify-items: center;
+    
+}
+.letter-icon {
+    width: min(120px, 85%);
+    height:auto;
+}
+.letter{
+    -webkit-tap-highlight-color: transparent;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.letter img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.letter p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.letter img:hover {
+    transform: scale(1.08);
+}
+
+.letter img:active {
+    transform: scale(0.95);
+}
+/*
+Footer divider line and heart
+*/
+.divider-line {
+    
+    stroke-width: 1.5;
+    stroke-linecap:round;
+    stroke: var(--secondary-color);
+}
+
+.divider-heart {
+    stroke-width: 1.5;
+    stroke-linejoin:round;
+    stroke: var(--Third-color);
+}
+
+
+
+@media (max-width: 600px) {
+    .letter-container {
+        width: 93%;
+        gap: 1.7rem 0.5rem;
+    }
+}
