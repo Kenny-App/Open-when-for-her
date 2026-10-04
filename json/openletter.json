@@ -1,0 +1,65 @@
+{
+    "1":{
+        "title":"LetterHeartFillOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#fff4ee",
+        "textColor": "#8A302D"
+    },
+    "2":{
+        "title":"LetterHeartOutlineOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#E8DDF0",
+        "textColor": "#9B78A8"
+    },
+    "3":{
+        "title":"LetterWaterOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#D9EAF2",
+        "textColor": "#4D7F95"
+    },
+    "4":{
+        "title":"LetterAngryOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#F4D8C7",
+        "textColor": "#B96B4D"
+    },
+    "5":{
+        "title":"LetterHugOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#DCE8DC",
+        "textColor": "#638568"
+    },
+    "6":{
+        "title":"LetterSleepOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#D9DDF0",
+        "textColor": "#626D9F"
+    },
+    "7":{
+        "title":"LetterSmileOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#F7EBC8",
+        "textColor": "#C19E42"
+    },
+    "8":{
+        "title":"LetterCloudOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#D4E8E6",
+        "textColor": "#4D8580"
+    },
+    "9":{
+        "title":"LetterStarOpen",
+        "content": "I love you fort",
+        "LastWord": "Forever",
+        "backgroundColor": "#E9DED2",
+        "textColor": "#8A6952"
+    }
+}

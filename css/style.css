@@ -121,8 +121,77 @@ Footer divider line and heart
     stroke-linejoin:round;
     stroke: var(--Third-color);
 }
+/*
+link properties
+*/
+.disabled-default{
+  color: var(--text-color);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
 
+.back-button {
+  
+    margin: 15px 0 0 12px; 
+    font-size: 2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
 
+/* When the user presses/touches it */
+.back-button:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+}
+
+.ol-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        flex-direction: column;
+
+    /* Space between the image and screen edges */
+    padding: 20px 24px;
+    box-sizing: border-box;
+}
+.open-letter {
+    width: 100%;
+    max-width: 516px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.open-letter img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.open-letter-text {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.heart-middle{
+  margin: 0;
+  opacity: 0.5;
+  font-size: 2rem;
+  text-align: center;
+}
+.last-word{
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
 
 @media (max-width: 600px) {
     .letter-container {
