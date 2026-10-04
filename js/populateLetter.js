@@ -33,6 +33,9 @@ fetch("../json/openletter.json")
         // Change heart/image if needed
         document.getElementById("open-letter-img").src =
             `../assets/img/svg/${letter.title}.svg`;
+
+        // Hide loading screen
+        document.getElementById("loading-screen").style.display = "none";
     })
     .catch(error => {
         console.error("Error loading letter:", error);
