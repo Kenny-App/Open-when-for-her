@@ -51,4 +51,27 @@
   </body>
 
   <script src="../js/populateLetter.js"></script>
+  <script>
+    // Redirect to the game if the user is offline
+    function checkConnection() {
+      if (!navigator.onLine) {
+        sessionStorage.previousPage = window.location.href;
+        window.location.replace("../html/offline.html");
+      }
+    }
+
+    // Check as soon as the page loads
+    checkConnection();
+
+    // Also check if the connection is lost while on the home page
+    window.addEventListener("offline", checkConnection);
+
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("../service-worker.js")
+          .catch((error) => console.error("Service Worker error:", error));
+      });
+    }
+  </script>
 </html>

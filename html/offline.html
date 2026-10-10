@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/offline.css" />
+    <link rel="icon" href="../assets/icon/favicon.svg" type="image/svg+xml" />
+    <!-- PNG favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icon/favicon-32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icon/favicon-16.png"
+    />
+
+    <!-- Apple Home Screen icon -->
+    <link rel="apple-touch-icon" href="../assets/icon/apple-touch-icon.png" />
+
+    <title>Open when for her - offline</title>
+  </head>
+  <body>
+    <header>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-label">POINTS</span>
+          <strong id="score">0</strong>
+        </div>
+
+        <div class="stat">
+          <span class="stat-label">BEST SCORE</span>
+          <strong id="best-score">0</strong>
+        </div>
+      </div>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <div class="retry-section" id="retry">
+          <p class="game-over" id="gameover">Game Over!</p>
+        </div>
+      </section>
+      <section class="game-space" id="game-space">
+        <div class="heart-space" id="heart-space">
+          <div class="protection-circle" id="protection-circle"></div>
+          <div class="heart" id="heart">♡</div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../js/offline.js"></script>
+  </body>
+</html>
