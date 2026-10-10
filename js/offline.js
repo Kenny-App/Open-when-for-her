@@ -63,13 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Activate or deactivate the shield when the heart area is tapped.
-  heartSpace.addEventListener("pointerup", (event) => {
+  function toggleShield(event) {
     event.preventDefault();
 
     shieldActive = !shieldActive;
     protectionCircle.classList.toggle("active", shieldActive);
-  });
+
+    console.log("Shield active:", shieldActive);
+  }
+
+  heartSpace.addEventListener("click", toggleShield);
 
   // Function to change reachtime and randomtime, ensuring they don't go below the minimum values.
   function ChangeReachTime(newReachTime, newRandomTime) {

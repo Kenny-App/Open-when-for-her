@@ -30,6 +30,7 @@ body {
   overflow: hidden;
 }
 .heart-space {
+    touch-action: manipulation;
   width: 100%;
   height: 400px;
   display: flex;
