@@ -62,6 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("heartBestScore", bestScore);
     }
   }
+
+  // Activate or deactivate the shield when the heart area is tapped.
+  heartSpace.addEventListener("pointerup", (event) => {
+    event.preventDefault();
+
+    shieldActive = !shieldActive;
+    protectionCircle.classList.toggle("active", shieldActive);
+  });
+
   // Function to change reachtime and randomtime, ensuring they don't go below the minimum values.
   function ChangeReachTime(newReachTime, newRandomTime) {
     if (newReachTime > minreachtime) {
