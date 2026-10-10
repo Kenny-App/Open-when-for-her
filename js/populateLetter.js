@@ -10,6 +10,8 @@ fetch("../json/openletter.json")
 
         const letter = data[letterId];
 
+        document.title = "Open when for her - " + (letter["page-title"] || "Letter");
+
         // Make sure the letter exists
         if (!letter) {
             console.error("Letter not found");
