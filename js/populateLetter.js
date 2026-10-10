@@ -1,8 +1,8 @@
 // Get the letter name from the URL
 const params = new URLSearchParams(window.location.search);
 const letterId = Number(params.get("letterID"));
-
-
+const letterImage = document.getElementById("open-letter-img");
+const loadingScreen = document.getElementById("loading-screen");
 // Fetch the JSON file
 fetch("../json/openletter.json")
     .then(response => response.json())
@@ -33,12 +33,20 @@ fetch("../json/openletter.json")
             letter.textColor;
 
         // Change heart/image if needed
-        document.getElementById("open-letter-img").src =
+        letterImage.src =
             `../assets/img/svg/${letter.title}.svg`;
 
-        // Hide loading screen
-        document.getElementById("loading-screen").style.display = "none";
+            if (letterImage.complete && letterImage.naturalWidth > 0) {
+                hideLoadingScreen();
+            } else {
+                letterImage.addEventListener("load", hideLoadingScreen, { once: true });
+            }
+        
     })
     .catch(error => {
         console.error("Error loading letter:", error);
     });
+
+function hideLoadingScreen() {
+    loadingScreen.style.display = "none";
+}
