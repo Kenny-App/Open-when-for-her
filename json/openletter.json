@@ -70,5 +70,29 @@
         "LastWord": "Je t'aime mon amour ❤️",
         "backgroundColor": "#E9DED2",
         "textColor": "#8A6952"
+    },
+    "10":{
+        "title":"LetterFearOpen",
+        "page-title":"Fear",
+        "content": "Je sais qu’en ce moment, tu as peur, entre les bruits qui viennent perturber ta tranquillité et les vidéos que tu vois sur les réseaux sociaux. Mais malgré tout ça, ne t’inquiète pas, ma puce. Chaque fois que tu auras peur, je serai là pour te rassurer et t’écouter. Et si je ne suis pas accessible pour le moment, lis cette lettre et rappelle-toi lis cette lettre et rappelle-toi que ton idiot de mari fera toujours tout son possible pour te protéger.",
+        "LastWord": "Quand mo la qui to peur❤️",
+        "backgroundColor": "#E2E5F5",
+        "textColor": "#7D8BC9"
+    },
+    "11":{
+        "title":"LetterToomuchOpen",
+        "page-title":"Too much",
+        "content": "My love, take a little break for me, okay? You don't have to figure everything out today, and you don't have to carry the weight of the whole world on your shoulders. It's okay to slow down, to rest, and to take things one little step at a time. I'm so proud of you, even on the days when you feel like you're not doing enough. You deserve rest just as much as you deserve success",
+        "LastWord": "Slow down my love❤️",
+        "backgroundColor": "#E1EBDD",
+        "textColor": "#72966B"
+    },
+    "12":{
+        "title":"LetterLonelyOpen",
+        "page-title":"Lonely",
+        "content": "Je sais qu’en ce moment, je ne suis plus au bureau et que les petits messages sur Teams ou le fait de se donner rendez-vous dans les escaliers peuvent parfois te manquer. Mais sache, Venus, que même si on ne se voit plus au travail, tu restes ma collègue préférée, ma meilleure amie et surtout ma femme. Alors, no worries, ma puce ! Tout à l’heure, quand tu rentres, on se ruine sur UNO",
+        "LastWord": "Hellouche ma femme adorée des tropiques ❤️",
+        "backgroundColor": "#F8E2DD",
+        "textColor": "#B96D70"
     }
 }
